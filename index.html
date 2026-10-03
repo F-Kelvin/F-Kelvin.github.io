@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Futughe Kelvin | Computer Science student and backend developer</title>
+<meta name="description" content="Portfolio of Futughe Kelvin, a Computer Science student at Niger Delta University building backend services and rule-based software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Futughe Kelvin</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap hero" id="top">
+    <div>
+      <h1>Futughe Kelvin</h1>
+      <p class="lead">I'm a junior software developer focused on building practical applications that solve real problems. I work across web development, backend systems and databases, and I build information systems that reason over rules and checked data.</p>
+      <p class="lead">My projects have given me hands-on experience turning ideas into working software, from content management platforms to a clinic record system with its own knowledge base. I keep strengthening my engineering skills by building, testing and improving real projects.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <figure class="map">
+      <svg viewBox="0 0 360 300" role="img" aria-label="Map sketch: scattered location reports, with five that agree inside a dashed circle">
+        <path class="road" d="M0 210 L360 120M120 0 L170 300M0 70 L360 250"/>
+        <circle class="stray" cx="48" cy="52" r="6"/><circle class="stray" cx="300" cy="46" r="6"/>
+        <circle class="stray" cx="318" cy="238" r="6"/><circle class="stray" cx="62" cy="248" r="6"/>
+        <circle class="ring" cx="196" cy="150" r="64"/>
+        <circle class="hit" cx="168" cy="132" r="7"/><circle class="hit" cx="214" cy="120" r="7"/>
+        <circle class="hit" cx="226" cy="168" r="7"/><circle class="hit" cx="176" cy="180" r="7"/>
+        <circle class="hit" cx="196" cy="146" r="7"/>
+        <circle class="centre" cx="196" cy="150" r="5"/>
+      </svg>
+      <figcaption>Location reports that land within 20 m and 24 hours of each other count toward consensus. Strays don't. This is the core check in my dissertation project.</figcaption>
+    </figure>
+  </div>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <div>
+          <h3>OfflineCrowdSense backend</h3>
+          <p class="meta">BSc dissertation project</p>
+        </div>
+        <div>
+          <p>A service that decides whether crowdsourced road-location reports can be trusted. It groups submissions by place and time, requires agreement before accepting a report, and adjusts each contributor's reputation score over time.</p>
+          <p class="stack">Python, FastAPI, SQLAlchemy, PostgreSQL, PostGIS</p>
+          <p class="links"><a href="https://github.com/F-Kelvin">View the code</a></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div>
+          <h3>Malaria information and patient record system</h3>
+          <p class="meta">Desktop application in Java</p>
+        </div>
+        <div>
+          <p>A desktop system for clinics that keeps patient malaria records and answers malaria questions from a built-in knowledge base of 27 concepts and 21 relationships. A 12-question symptom checker scores a patient's risk as low, moderate or high, and any severe danger sign triggers an urgent-care warning straight away.</p>
+          <p>Staff, admins and patients get different access. Records can be exported to another institution as a package with a SHA-256 checksum, and a tampered file is rejected on import. Every login and transfer goes into an audit log.</p>
+          <p class="stack">Java, Java Swing, Rule-Based Reasoning, RBAC, Password Hashing, Audit Logging</p>
+          <p class="links"><a href="https://github.com/F-Kelvin">View the code</a></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div>
+          <h3>Niger Delta University chatbot</h3>
+          <p class="meta">Browser app in JavaScript</p>
+        </div>
+        <div>
+          <p>A chatbot that answers questions about the university, such as faculties, departments, admissions, postgraduate study and student services. It has no server and no AI service. It works out what the student is asking, expands synonyms, and tolerates typos with edit-distance matching before searching 12 JSON files of university data.</p>
+          <p>I also compiled a bank of 423 test questions across 29 topics and wrote a Python script that turns it into JSON, plus a validator that checks the data files.</p>
+          <p class="stack">JavaScript, HTML, CSS, JSON, Python</p>
+          <p class="links"><a href="https://github.com/F-Kelvin">View the code</a></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div>
+          <h3>Malaria Anthology</h3>
+          <p class="meta">Content website in PHP and MySQL</p>
+        </div>
+        <div>
+          <p>A publishing site that collects malaria research, case studies and personal accounts, organised by category and searchable by title, summary and full text. Editors write, edit, publish and archive articles from an admin area, and only admins can manage categories and users.</p>
+          <p>Database queries use prepared statements, passwords are hashed, and all output is escaped to prevent injection and script attacks.</p>
+          <p class="stack">PHP, MySQL, HTML, CSS, RBAC, Password Hashing</p>
+          <p class="links"><a href="https://github.com/F-Kelvin">View the code</a></p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <div class="about">
+        <img src="me.jpg" alt="Portrait of Futughe Kelvin in a black patterned blazer and white shirt" width="720" height="960">
+        <div>
+          <p>I'm Futughe Kelvin, a BSc Computer Science student at Niger Delta University. My work is mostly backend and rule-based software: a spatial data validation service for my dissertation, a clinic record system in Java, a university chatbot and a PHP content site.</p>
+          <p>I started with HTML and CSS and have since built in four languages. I'm now looking for an internship or junior role where I can keep building backend software and learn from a team.</p>
+        </div>
+      </div>
+      <div class="skills">
+        <div>
+          <h3>Languages &amp; Frameworks</h3>
+          <ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>PHP</li><li>FastAPI</li><li>SQLAlchemy</li></ul>
+        </div>
+        <div>
+          <h3>Databases &amp; Tools</h3>
+          <ul class="tags"><li>PostgreSQL</li><li>PostGIS</li><li>MySQL</li><li>Git</li></ul>
+        </div>
+        <div>
+          <h3>Frontend &amp; UI</h3>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java Swing</li></ul>
+        </div>
+        <div>
+          <h3>Specializations &amp; Security</h3>
+          <ul class="tags"><li>Rule-Based Reasoning</li><li>Knowledge Bases</li><li><abbr title="Role-based access control">RBAC</abbr></li><li>Password Hashing</li><li>Audit Logging</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p>I'm open to internships and junior backend roles. Email is the fastest way to reach me.</p>
+      <a class="mail" href="mailto:kelvinfutughework@gmail.com">kelvinfutughework@gmail.com</a>
+      <ul>
+        <li><a href="tel:+2349034118099">+234 903 411 8099</a></li>
+        <li><a href="https://github.com/F-Kelvin">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a></li>
+        <li><a href="CV.pdf" download>Download my CV</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Futughe Kelvin</div>
+</footer>
+</body>
+</html>
